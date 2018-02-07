@@ -4,11 +4,7 @@ public class Quiz {
 	public static void main(String[] args) {
 		
 		
-		if(tacan(rand1,oper,rand2,odgovor)){
-			System.out.println("Tacan odgovor");
-		}else{
-			System.out.println("Vise srece drugi put");
-		}
+		
 	}
 	
 	public static boolean tacan(int a, int oper,int  b,int  odg){
