@@ -10,6 +10,13 @@ public class Quiz {
 		System.out.println("Koliko je " + rand1 + " " + oper + " " + rand2 + " ?");
 		System.out.println("Unesite tacan odgovor: " );
 		int odgovor = unos.nextInt();
+		
+		if (tacan(rand1, oper, rand2, odgovor)){
+			System.out.println("Tacan odgovor");
+		}
+		else {
+			System.out.println("Vise srece drugi put.");
+		}
 
 	}
 	public static int sabiranje (int rand1, int rand2){
