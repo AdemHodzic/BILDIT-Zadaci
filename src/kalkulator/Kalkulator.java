@@ -5,54 +5,53 @@ import java.util.*;
 public class Kalkulator {
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
+
 	Scanner input = new Scanner(System.in);
 	System.out.println("Pozdrav.Broj pa operaciju koju zellite uraditi pa sljedeci broj.\nUnesite -1 za prekid");
+	System.out.println("1.Sabiranje"
+			+"\n2.Oduzimanje"
+			+"\n3.Mnozenje"
+			+"\n4.Djeljenje"
+			+"\n5.Korijenovanje(treci argument nece uticati na operaciju)"
+			+"\n6.Kvadriranje(treci argument nece uticati na operaciju) ");
 	int a = input.nextInt();
 	error(a);
 	int b = input.nextInt();
 	error(b);
 	int operacija = input.nextInt();
 	error(operacija);
-	System.out.println("Vas rezultat je " + izracunaj(a,b,operacija));
+	System.out.println("Vas rezultat je " + izracunaj(a,operacija,b));
 	System.out.println("Hvala vam na koristenju nase aplikacije");
 	input.close();
 	}
 	
 	public static void error(int a){
-		if(a<0) System.exit(0);
+		if(a<0) pogresanUnos();
 	}
 	
 	public static int izracunaj(int a,int b,int oper){
 		switch(oper){
 			case 1:
-				sabiranje(a,b);
-				break;
+				return sabiranje(a,b);
+				
 			case 2:
-				oduzimanje(a,b);
-				break;
+				return oduzimanje(a,b);
 			case 3:
-				mnozenje(a,b);
-				break;
+				return mnozenje(a,b);
 			case 4:
-				dijeljenje(a,b);
-				break;
+				return dijeljenje(a,b);
 			case 5:
-				korjenovanje(a,b);
-				break;
+				return (int)korjenovanje(a);
 			case 6:
-				kvadriranje(a,b);
-				break;
+				return kvadriranje(a);
 			default:
-				System.out.println(pogresanUnos());
-				System.exit(0);
+				pogresanUnos();
 		}
+		return -1;
 	}
-	public static String pogresanUnos(){
-		return "Pogresan unos";
-=======
-		
-		
+	public static void pogresanUnos(){
+		System.out.println("Pogresan unos");
+		System.exit(0);
 		}
 	
 	public static int sabiranje (int a, int b){
@@ -72,6 +71,5 @@ public class Kalkulator {
 	}
 	public static int kvadriranje(int a){
 		return a*a;
->>>>>>> 1ec7c707096e5740ba07d77ff3c89896ee00fe33
-	}
+		}
 }
