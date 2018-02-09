@@ -78,5 +78,17 @@ public class Brojevi {
 			if(num%i==0)return false;
 		}
 		return true;
-  }
+  
+	}
+	
+	public static boolean isPlaindrome(int num){
+		String temp = Integer.toString(num);
+		int len = temp.length() -1;
+		for(int i = 0;i<temp.length();i++){
+			if(temp.charAt(i) == temp.charAt(len)) return true;
+			len--;
+		}
+		return false;
+	}
+
 }
