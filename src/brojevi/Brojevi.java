@@ -5,6 +5,15 @@ import java.util.*;
 public class Brojevi {
 
 	public static void main(String[] args) {
+
+	}
+
+	public static void primeNum() {
+		for (int i = 0; i < 1000; i++) {
+			if (isPrime(i)) {
+				System.out.println(i + " ");
+			}
+		}
 		
 	}
 
@@ -91,4 +100,14 @@ public class Brojevi {
 		return false;
 	}
 
+	public static void emirp() {
+		int count = 0, n = 2;
+		while (count < 100) {
+			if ((!isPalindrom(n) && isPrime(n))) {
+				count++;
+				System.out.print(n + " ");
+			}
+			n++;
+		}
+	}
 }
