@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /bin/
 <<<<<<< HEAD
 .classpath
@@ -27,3 +28,9 @@ bin
 .classpath
 .project
 >>>>>>> brojevi/master
+=======
+.settings
+bin
+.classpath
+.project
+>>>>>>> math/master
