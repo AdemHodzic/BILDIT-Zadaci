@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /bin/
 <<<<<<< HEAD
 .classpath
@@ -34,3 +35,8 @@ bin
 .classpath
 .project
 >>>>>>> math/master
+=======
+bin
+.classpath
+.project
+>>>>>>> calc/master
