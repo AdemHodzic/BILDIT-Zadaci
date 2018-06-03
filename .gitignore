@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /bin/
 <<<<<<< HEAD
 .classpath
@@ -6,3 +7,9 @@
 .project
 .classpath
 >>>>>>> z13/master
+=======
+.settings
+bin
+.classpath
+.project
+>>>>>>> faks/master
