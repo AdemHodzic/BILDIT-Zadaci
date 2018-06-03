@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /bin/
 <<<<<<< HEAD
 .classpath
@@ -13,3 +14,9 @@ bin
 .classpath
 .project
 >>>>>>> faks/master
+=======
+bin
+.settings
+.classpath
+.project
+>>>>>>> matix/master
